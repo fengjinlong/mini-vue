@@ -1,5 +1,9 @@
 export * from "./shapeFlags";
 
+export const isObject = (val) => {
+  return val !== null && typeof val === "object";
+};
+
 const camelizeRE = /-(\w)/g;
 /**
  * @private
@@ -8,6 +12,8 @@ const camelizeRE = /-(\w)/g;
 export const camelize = (str: string): string => {
   return str.replace(camelizeRE, (_, c) => (c ? c.toUpperCase() : ""));
 };
+
+export const extend = Object.assign
 
 /**
  * @private
