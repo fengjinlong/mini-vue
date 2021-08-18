@@ -61,6 +61,8 @@
 - [x] 支持 provide/inject
 - [x] 支持最基础的 slots
 - [x] 支持 Text 类型节点
+- [ ] proxyRefs
+- [ ] shallowReadonly
 
 #### reactivity
 
@@ -68,6 +70,7 @@
 
 - [x] reactive 的实现
 - [x] ref 的实现
+- [x] computed 的实现
 - [x] track 依赖收集
 - [x] trigger 触发依赖
 - [x] 支持 isReactive
