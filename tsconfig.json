@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "strict": true,
+    "rootDir": ".",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es2016",
+    "module": "esnext",
     "noImplicitAny": false,
     "removeComments": true,
-    "preserveConstEnums": false,
+    "preserveConstEnums": true,
     "sourceMap": true,
     "downlevelIteration": true,
-    "lib": ["es6", "DOM"]
+    "lib": ["esnext", "DOM"],
+    "types": ["vitest/globals"],
+    "paths": {
+      "@mini-vue/*": ["packages/*/src"]
+    }
   },
-  "include": ["src/index.ts", "src/global.d.ts"]
+  "include": ["packages/*/src", "packages/*/__tests__"]
 }
